@@ -5,7 +5,7 @@ const Stripe = require("stripe");
 const { validateCart } = require("../lib/tiers");
 const { findPromo } = require("../lib/promo");
 
-const SHOP_NAME = process.env.SHOP_NAME || "Lu's Card Art";
+const SHOP_NAME = process.env.SHOP_NAME || "Forged Legends";
 const COLLECT_SHIPPING = process.env.COLLECT_SHIPPING !== "false"; // on unless set to "false"
 
 module.exports = async function handler(req, res) {

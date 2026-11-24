@@ -1,4 +1,4 @@
-# Lu's Card Art: checkout site setup guide
+# Forged Legends: checkout site setup guide
 
 This is the checkout-only site. Your info site (home, gallery, policies) is the separate `lus-site` project.
 
@@ -37,7 +37,7 @@ You tell them on Snapchat which option to pick. Tapping "Add to cart" again adds
 3. **Vercel:** sign up at vercel.com with GitHub → **Add New → Project** → pick the repository → Deploy.
 4. In Vercel, open **Settings → Environment Variables** and add:
    - `STRIPE_SECRET_KEY` = your `sk_test_…` key
-   - `SHOP_NAME` = Lu's Card Art
+   - `SHOP_NAME` = Forged Legends
    - `COLLECT_SHIPPING` = `false` if you hand cards over in person (leave it out to collect a US mailing address)
    Then **redeploy** (Deployments → ⋯ → Redeploy).
 5. **Test it:** open your site, add an option, check out with card `4242 4242 4242 4242`, any future date, and any CVC. The payment shows up in Stripe's test dashboard.
